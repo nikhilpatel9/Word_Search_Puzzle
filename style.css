@@ -1,14 +1,20 @@
 body {
-    background-color: #d06fa9;
+    background-color:#0c0237;
+    transform: scale(0.78);
+     /* margin-top: -85px; */
+    /* overflow: hidden;  */
 }
 
 .card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+.card-body {
+    color : #0051a2;
+}
 
 .card-header {
-    background-color: #23c870;
-    color: #fff;
+    background-color: #0c0237;
+    color: rgb(160, 219, 221);;
     font-size: 1.8rem; /* Modified font size */
     font-weight: bold;
     text-align: center;
@@ -17,9 +23,15 @@ body {
 .btn{
     font-size: 1.6rem;
     margin: 25px;
+    background-color: #fff;
+    color : #0c0237;
+}
+.btn:hover{
+    background-color: #0c0237;
+    border-color: #fff;
 }
 #word {
-    background-color: #3dc342;
+    background-color: #0c0237;
 }
 
 #countdown {
@@ -28,23 +40,31 @@ body {
 }
 
 #letters {
-    width: 100%;
+    /* Base styles */
+    width: auto;
     height: auto;
     aspect-ratio: 1 / 1; /* This makes the container square */
-    border: 1px solid black;
+    border: 1px solid #0051a2;
     background-color: #ffffff;
+    color: #0051a2;
     border-radius: 5px;
     padding: 0.5rem;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
     gap: 0.25rem;
-}
-
-.individual {
+  
+    /* Dynamic styles
+    --num-letters: 12; /* Adjust the total number of letters 
+    --num-cols: 12; /* Adjust the number of columns 
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-template-rows: repeat(calc(var(--num-letters) / var(--num-cols)), 1fr); */
+  }
+  
+  .individual {
+    /* Base styles */
     width: 100%;
     aspect-ratio: 1 / 1; /* This makes the individual cells square */
-    border: 1px solid black;
+    border: 1px solid #0051a2;
     border-radius: 5px;
     font-size: 1.5rem; /* Modified font size */
     text-align: center;
@@ -52,7 +72,8 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
-}
+  }
+  
 #word {
     display: flex;
     justify-content: space-between; /* Aligns items to the start and end of the container */
@@ -65,11 +86,12 @@ body {
 
 
 .selected {
-    background-color: plum;
+    background-color: rgb(160, 219, 221);
 }
 
 .found {
-    background-color: rgb(237, 71, 71);
+    background-color: rgb(0, 131, 135);
+    color: #fff;
 }
 .card{
     font-size: 1.5rem;
