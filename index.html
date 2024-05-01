@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Word Search Puzzle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body id="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header" id="box">
+                        <img src="hint.jpg" alt="Hint" width="30" height="30">
+                    </div>
+                    <div class="card-body" id="hint"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header" id="res">
+                    </div>
+                    <div class="card-body" id="ans"></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header" id="word">
+                        <span id="word-text">Word Search puzzle</span>
+                        <span id="countdown"></span>
+                    </div>
+                    <div class="card-body">
+                        <div id="letters"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3">
+                <!-- <div class="card">
+                    <div class="card-header" id="scr"></div>
+                    <div class="card-body" id="scrno"></div>
+                </div> -->
+                <div class="card">
+                    <div class="card-header" id="mxscr"></div>
+                    <div class="card-body" id="mxscrno"></div>
+                </div>
+            </div>
+            <div class="col-md-9 text-center" id="btn">
+                <button type="button" id="start" class="btn btn-primary">Start</button>
+                <button type="button" id="Solution" class="btn btn-primary">Solution</button>
+                <button type="button" id="Hint" class="btn btn-primary">Hint</button>
+                <button type="button" id="end" class="btn btn-primary">End</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
