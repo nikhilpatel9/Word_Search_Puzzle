@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>Word Search Puzzle</title>
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -10,10 +11,11 @@
 <body id="page">
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2.5">
                 <div class="card">
                     <div class="card-header" id="box">
-                        <img src="hint.jpg" alt="Hint" width="30" height="30">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <!-- <img src="hint.jpg" alt="Hint" width="30" height="30"> -->
                     </div>
                     <div class="card-body" id="hint"></div>
                 </div>
@@ -57,6 +59,8 @@
             </div>
         </div>
     </div>
+    
+    <script src="words.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
