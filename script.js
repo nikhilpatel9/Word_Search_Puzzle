@@ -259,7 +259,7 @@ function placeCorrect(myArr) {
 }
 
 
-let countdownTime = 360; 
+let countdownTime = 400; 
 let isPaused = false;
 function updateCountdown() {
     if(!isPaused) {
